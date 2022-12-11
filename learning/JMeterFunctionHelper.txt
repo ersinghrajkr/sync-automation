@@ -1,0 +1,3 @@
+${__javaScript(new Date().toISOString().slice(0\,10),todaysDate)}
+
+${__javaScript(new Date().toISOString().replace(/T/\, ' ').replace(/\..+/\, '');,currentDateTime)}
