@@ -1,0 +1,120 @@
+In Case of MULTIPLE THREADS DEPENDENT ON ONE ANOTHER based on SEQUENCE/ORDER they are defined
+Under Test Plan - check the checkbox: Run Threads consecutively (i.e one at a time in order/sequence they are defined)
+
+Under Test Plan - uncheck the checkbox: Run Threads consecutively - to run threads in parallel
+
+******************************************************************************************************************************
+
+No Of Threads => No of User/Visitor to the application     => 50
+
+
+Ramp-Up Period ( In Seconds) => 100
+
+
+It means:    Ramp-Up Period ( In Seconds)/No Of Threads	
+		=> 100/50 = 2sec i.e each user will take 2 seconds to start one by one
+Each thread/user/visitor will start executing our sampler which in defined in our test plan
+
+
+
+when the last sampler is finished. Then threads starts over again if there in another loop count else thread/user/visitor SHUTS DOWN
+
+So, one loop count means threads/users/visitors will execute sampler only ones
+
+So, Two loop count means threads/users/visitors will execute sampler Twice
+
+So, N loop count means threads/users/visitors will execute sampler N Times
+
+Loop Count: Infinite/FOREVER
+This can be controlled by scheduler/thread lifetime
+
+Duration: 60seconds
+
+
+Action to be taken after a Sampler error:
+
+Continue	Start next Thread Loop	Stop Thread	Stop Test Now
+
+*******************************************************************************************************************************
+CONFIG ELEMENTS: 
+
+1> HTTP Request Defaults:  Add this to avoid duplicate data under http sampler
+for example:  server name/ IP / host/domain/base_url => www.demoblaze.com 
+protocols: https
+
+2> HTTP Header Manager: let's us add or override HTTP Header, it specifies list of headers will be added to the HTTP Samplers on the
+JMeter Test Plan.
+
+The header will be added to all the http sampler which are under the scope of that HTTP Header Manager
+
+3> HTTP Cache Manager: The http Cache Manager is used to add caching functionality
+
+for each virtual user thread it stores max 5000 number of elements in cache
+
+3> HTTP Cookie Manager:  
+Cookie can be added manually to the cookie manager. Adding cookie manually to the cooike manager will be shared by all thread groups
+If the http sampler receives cookie in response then
+Cookie Manager will store the session info and sends it to all subsquent http sampler in a thread
+
+3> DNS Cache Manager: Resolves the domain name to IP
+Cached resolved DNS can be cleared after with each iteration by checking the checkbox
+System DNS or Custom DNS can be used to resolve the domain names to IP address
+In case of system DNS. it will use host OS to resolve Domain Names
+
+*************************************************************************************************************************
+Listeners - HTTP Request Sampler
+Server Name / IP
+parameters
+body data
+file upload
+http request method
+path
+protocols( default - http, https)
+port - http-80, https-443
+
+Redirects Automatically ( doesn't follows the redirects path)
+Follows Redirects ( follows the redirects ( respone code -302 ) path
+Use multipart/form-data
+
+client implementations
+Timeouts
+Response
+Proxy Server
+
+
+*************************************************************************************************************************
+Listeners - commonly used elements
+
+Listener literally listens to what is happening in the Test
+The listenrs are the components that displays the results
+
+
+There is more - 
+JMeters listeners enables us to monitor the request sent from JMeter as well to analyze the responses received from the system under the test
+
+All listeners collects the same data just the difference is at presentations level
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
