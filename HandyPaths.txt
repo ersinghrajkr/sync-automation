@@ -1,0 +1,5 @@
+D:\Apps\#SDET\AppDevelopment\sync-automation\SynchronizationTestPlanReport.csv
+
+D:\Automation\JMeter\JMeter-5.4.1\bin\user.properties
+
+D:\Apps\#SDET\AppDevelopment\sync-automation\SynchronizationTestPlanReport

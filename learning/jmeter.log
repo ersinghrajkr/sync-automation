@@ -1,0 +1,31 @@
+2022-12-12 23:41:58,014 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2022-12-12 23:41:58,046 INFO o.a.j.JMeter: Loading user properties from: D:\Automation\JMeter\JMeter-5.4.1\bin\user.properties
+2022-12-12 23:41:58,046 INFO o.a.j.JMeter: Loading system properties from: D:\Automation\JMeter\JMeter-5.4.1\bin\system.properties
+2022-12-12 23:41:58,046 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2022-12-12 23:41:58,046 INFO o.a.j.JMeter: Version 5.4.1
+2022-12-12 23:41:58,046 INFO o.a.j.JMeter: java.version=11.0.8
+2022-12-12 23:41:58,046 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2022-12-12 23:41:58,046 INFO o.a.j.JMeter: os.name=Windows 10
+2022-12-12 23:41:58,046 INFO o.a.j.JMeter: os.arch=amd64
+2022-12-12 23:41:58,046 INFO o.a.j.JMeter: os.version=10.0
+2022-12-12 23:41:58,046 INFO o.a.j.JMeter: file.encoding=Cp1252
+2022-12-12 23:41:58,046 INFO o.a.j.JMeter: java.awt.headless=true
+2022-12-12 23:41:58,046 INFO o.a.j.JMeter: Max memory     =1073741824
+2022-12-12 23:41:58,046 INFO o.a.j.JMeter: Available Processors =8
+2022-12-12 23:41:58,061 INFO o.a.j.JMeter: Default Locale=English (EN)
+2022-12-12 23:41:58,061 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2022-12-12 23:41:58,061 INFO o.a.j.JMeter: JMeterHome=D:\Automation\JMeter\JMeter-5.4.1
+2022-12-12 23:41:58,061 INFO o.a.j.JMeter: user.dir  =D:\Apps\#SDET\AppDevelopment\sync-automation\learning
+2022-12-12 23:41:58,061 INFO o.a.j.JMeter: PWD       =D:\Apps\#SDET\AppDevelopment\sync-automation\learning
+2022-12-12 23:42:02,827 INFO o.a.j.JMeter: IP: 192.168.33.1 Name: RAJ-PC FullName: RAJ-PC
+2022-12-12 23:42:02,833 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'D:\Apps\#SDET\AppDevelopment\sync-automation\report-output'
+2022-12-12 23:42:02,849 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2022-12-12 23:42:02,849 ERROR o.a.j.JMeter: An error occurred: 
+java.lang.IllegalArgumentException: Cannot read test results file : D:\Apps\#SDET\AppDevelopment\sync-automation\logs-output\jmeter.log
+	at org.apache.jmeter.report.dashboard.ReportGenerator.<init>(ReportGenerator.java:130) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.JMeter.start(JMeter.java:557) [ApacheJMeter_core.jar:5.4.1]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:254) [ApacheJMeter.jar:5.4.1]

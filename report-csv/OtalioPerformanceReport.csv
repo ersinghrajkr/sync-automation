@@ -1,0 +1,8 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1670871359126,1028,001_Login,200,OK,Thread Group 1-1,text,true,,366,314,1,1,https://api.demoblaze.com/login,1028,0,584
+1670871360156,925,002_HomePage,200,OK,Thread Group 1-1,text,true,,19934,333,1,1,https://www.demoblaze.com/index.html,830,0,404
+1670871361082,0,003_Add Product to Cart,Non HTTP response code: org.apache.http.client.ClientProtocolException,Non HTTP response message: URI does not specify a valid host name: http:/,Thread Group 1-1,text,false,,1121,0,1,1,http:/,0,0,0
+1670871361082,0,004_Show Cart,Non HTTP response code: org.apache.http.client.ClientProtocolException,Non HTTP response message: URI does not specify a valid host name: http:/,Thread Group 1-1,text,false,,1121,0,1,1,http:/,0,0,0
+1670871361551,139,005_View Product,400,Bad Request,Thread Group 1-1,text,false,,337,313,1,1,https://www.demoblaze.com/prod.html?idp_=1,138,0,0
+1670871361691,335,006_View Product API,500,Internal Server Error,Thread Group 1-1,text,false,,493,180,1,1,https://api.demoblaze.com/view,335,0,0
+1670871361083,474,Product,,"Number of samples in transaction : 2, number of failing samples : 2",Thread Group 1-1,,false,,830,493,1,1,null,473,470,0

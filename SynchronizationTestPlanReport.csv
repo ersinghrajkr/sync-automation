@@ -1,0 +1,2 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1672423780614,1099,Demo-LoginAtSHIP-HTTPRequest,200,,1000-ModuleSample-ThreadGroup 2-1,text,true,,2564,387,1,1,https://ship2-qa.otaliodev.com/iam/v1/sso/login,1099,0,720
